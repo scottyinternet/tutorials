@@ -9,7 +9,7 @@ public class HashMapPrinter {
 	}
 
 	public static <K, V> void prettyPrint(Map<K, V> map, String title) {
-		System.out.println(" - - - " + toSpacedUpper(title) + " - - - ");
+		System.out.println("\n - - - " + toSpacedUpper(title) + " - - - ");
 		for (K key : map.keySet()) {
 			V value = map.get(key);
 			System.out.print(key + " = ");
@@ -31,7 +31,6 @@ public class HashMapPrinter {
 			}
 		}
 		System.out.println(" - - - - - - end - - - - - - \n");
-
 	}
 
 	private static String toSpacedUpper(String input) {
